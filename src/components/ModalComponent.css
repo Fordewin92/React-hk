@@ -1,0 +1,17 @@
+.close-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.hmodal{
+  color: black;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.356);
+  border-bottom: 1px solid black;
+}
+.pmodal{
+  color: rgb(85, 85, 85);
+  size: 50px;
+  font-size: 1.5em;
+}

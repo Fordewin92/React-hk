@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  gap: 10px; /* Espacio entre los elementos dentro del contenedor */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.App h1 {
+  text-align: center;
+}
+
+.image-carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.image-gallery-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-container {
+  flex: 1;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 200px; /* Separación horizontal */
+  row-gap: 60px; /* Separación vertical */
+  padding: 20px;
+  margin-right: 80px; /* Ajusta este valor para mover las tarjetas hacia la izquierda */
+}

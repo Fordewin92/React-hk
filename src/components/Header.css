@@ -1,0 +1,62 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 3500px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  position: relative;
+  background: transparent;
+  z-index: 10; /* Asegurar que el encabezado esté por encima del carrusel */
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to top, rgba(150, 150, 150, 0), rgb(225, 225, 225, 1));
+  z-index: -1; /* Asegurar que el pseudo-elemento esté por detrás del contenido del encabezado */
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  padding: 25px 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold; 
+}
+
+nav a:hover {
+  color: black;
+  transition: color 0.3s ease;
+}
+.plogo{
+  color: black;
+  font-size: 1.2rem;
+  right: 700px;
+}
